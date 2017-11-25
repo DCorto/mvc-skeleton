@@ -19,3 +19,11 @@ You can always have a look over here if you need help: https://github.com/zendfr
 - Less is more
 
 You are **always** welcome to ask for help if things are unclear. We always encourage communication inside the team and this test doesn't prevent it!
+
+## Running Unit Tests
+
+To run the supplied unit tests, you need to do one of the following:
+
+```bash
+$ ./vendor/bin/phpunit
+```
