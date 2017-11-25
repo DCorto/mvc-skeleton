@@ -13,6 +13,9 @@ use Zend\Test\PHPUnit\Controller\AbstractConsoleControllerTestCase;
 
 class HelloWorldTestController extends AbstractConsoleControllerTestCase
 {
+    /**
+     *  Setup for HelloWorldTestController
+     */
     public function setUp()
     {
         // The module configuration should still be applicable for tests.
@@ -27,7 +30,11 @@ class HelloWorldTestController extends AbstractConsoleControllerTestCase
         parent::setUp();
     }
 
-    public function testIndexActionShowHelloWorld(){
+    /**
+     *  Test for 'IndexAction' from 'HelloWorldController'
+     */
+    public function testIndexActionShowHelloWorld()
+    {
         $this->dispatch('hello-world');
 
         $this->assertModuleName('application');
